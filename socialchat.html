@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats</title>
+</head>
+<style>
+    .outer {
+        width: 680px;
+        height: 1200px;
+        margin: auto;
+        border: 5px solid #2C3E50;
+        border-radius: 20px;
+        background-color: #34495E;
+    }
+
+    .inner {
+        width: 650px;
+        height: 1150px;
+        margin: auto;
+        margin-top: 15px;
+        border: 5px solid #2C3E50;
+        border-radius: 25px;
+        background-color: #ECF0F1;
+        position: relative;
+    }
+
+    .chiku-profile {
+        display: flex;
+        align-items: center;
+        height: px;
+        width: 98%;
+        margin: auto;
+        border: 5px solid #2C3E50;
+        margin-top: 3px;
+        border-radius: 25px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        background-color: #2980B9;
+        color: white;
+    }
+
+    #user {
+        border-radius: 50%;
+        height: 70px;
+        border: 5px solid #2C3E50;
+    }
+
+    .chiku-profile p {
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 20px;
+    }
+
+    .chat-page {
+        height: 1000px;
+        width: 98%;
+        border: 5px solid #2C3E50;
+        margin: auto;
+        margin-top: 5px;
+        border-radius: 25px;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        background-color: #ECF0F1;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #tiku {
+        border-radius: 50%;
+        border: 5px solid #2C3E50;
+        height: 80px;
+        float: right;
+        margin: 15px;
+    }
+
+    .messages {
+        margin-top: 110px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message {
+        border: 2px solid #2C3E50;
+        border-radius: 10px;
+        margin: 5px 0;
+        padding: 5px 10px;
+        font-size: 35px;
+        max-width: 70%;
+        word-wrap: break-word;
+    }
+
+    .message-left {
+        align-self: flex-start;
+        text-align: left;
+        margin-left: 8px;
+        background-color: #BDC3C7;
+        color: #2C3E50;
+    }
+
+    .message-right {
+        align-self: flex-end;
+        text-align: right;
+        margin-right: -110px;
+        background-color: #3498DB;
+        color: white;
+    }
+</style>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="chiku-profile">
+                <img id="user" src="/chiku-don.jpg" alt="chiku-don">
+                <p>Chiku Don</p>
+            </div>
+            <div class="chat-page">
+                <img src="/tiku-profile.jpg" id="tiku" alt="tiku-badmos">
+                <div class="messages">
+                    <div class="message message-left">Meri Bandi ko msg mat kr bhai 😠</div>
+                    <div class="message message-right">Teri bandi kaise be ❓</div>
+                    <div class="message message-left">Tu samjh bhai! 😖</div>
+                    <div class="message message-right">😒 Apne kam se kam rakh</div>
+                    <div class="message message-left">Pr bhai tu billa hai 😑</div>
+                    <div class="message message-right">Pyar, pyar hota hai</div>
+                    <div class="message message-left">Bhai pair padhta hu tere dur hatt ja 🙏</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
